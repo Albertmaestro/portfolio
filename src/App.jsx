@@ -303,14 +303,21 @@ function App() {
             <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
               <div className="p-8 flex flex-col gap-4">
                 <h3 className="font-secondary font-bold text-accent">
-                  Project 1
+                  Chocolate Sales Dashboard
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Master Excel with data management, key functions, PivotTables,
-                  PowerPivot, formula audits, and automation through Macros/VBA
-                  for increased efficiency.
+                  The Chocolate Sales Dashboard project is a comprehensive and
+                  visually appealing solution designed to provide insightful
+                  analytics and reporting for the chocolate sales data of the
+                  Company,using some of tools in Ms excel like Basic Formulas
+                  ,Pivot table and Charts to Create a clean and interactive
+                  dashboard.
                 </p>
-                <a href="./images/excel.pdf" target="_blank">
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1I1yjSRor1kjgFuwx1AEaEK2zGxAd0Ppa782UpfXO8Gs/edit#gid=481430968"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                     View Demo
                   </button>
