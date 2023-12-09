@@ -411,7 +411,7 @@ function App() {
 
         <section className="px-6 py-12 md:px-32 md:py-24 bg-primary">
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 flex flex-col gap-4 pr-12">
+            <div className="w-full md:w-1/2 flex flex-col gap-4 pr-0 md:pr-12">
               <h3 className="text-accent font-bold font-secondary">
                 Contact Me
               </h3>
