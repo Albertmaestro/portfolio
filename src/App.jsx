@@ -56,7 +56,7 @@ function App() {
             </div>
             <div className="w-full md:w-1/2 text-gray-400 flex flex-col gap-2 md:gap-4">
               <h2 className="text-xl font-secondary text-accent">Hi I'm</h2>
-              <h1 className="text-5xl md:text-7xl font-black text-gray-400">
+              <h1 className="text-6xl md:text-7xl font-black text-gray-400">
                 ALBERT <span className="text-accent">MAESTRO</span>
               </h1>
               <p className="text-gray-400 text-sm leading-6">
@@ -98,7 +98,7 @@ function App() {
             <h1 className="text-accent font-bold font-secondary">
               What I Currently Do?
             </h1>
-            <h1 className="text-gray-400 text-3xl text-center md:text-5xl font-bold">
+            <h1 className="text-gray-400 text-4xl text-center md:text-5xl font-bold">
               Taking Online Courses
             </h1>
             <p className="text-gray-400 text-sm px-0 md:px-56 text-center leading-6">
@@ -194,7 +194,7 @@ function App() {
             </div>
             <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col gap-4">
               <h1 className="text-accent font-bold font-secondary">About Me</h1>
-              <h1 className="text-gray-400 font-bold text-3xl md:text-5xl">
+              <h1 className="text-gray-400 font-bold text-4xl md:text-5xl">
                 What is My Goal?
               </h1>
               <p className="text-gray-400 text-sm leading-6">
@@ -285,7 +285,7 @@ function App() {
             <h3 className="text-accent font-bold font-secondary">
               My Projects
             </h3>
-            <h1 className="text-gray-400 font-bold text-center text-3xl md:text-5xl">
+            <h1 className="text-gray-400 font-bold text-center text-4xl md:text-5xl">
               Sample Things I've Built
             </h1>
             <p className="text-gray-400 text-sm p-0 md:px-56 text-center leading-6">
@@ -415,7 +415,7 @@ function App() {
               <h3 className="text-accent font-bold font-secondary">
                 Contact Me
               </h3>
-              <h1 className="text-gray-400 font-bold text-3xl md:text-5xl">
+              <h1 className="text-gray-400 font-bold text-4xl md:text-5xl">
                 Get In Touch!
               </h1>
               <p className="text-gray-400 text-sm leading-6">
