@@ -60,14 +60,15 @@ function App() {
                 ALBERT <span className="text-accent">MAESTRO</span>
               </h1>
               <p className="text-gray-400 text-sm leading-6">
-                Seeking an entry-level Data Analyst role to apply my strong
-                analytical and quantitative skills which transform data into
-                actionable insights.
+                A Career shifter seeking an entry-level Data Analyst role to
+                apply my strong analytical and quantitative skills which
+                transform data into actionable insights.
               </p>
               <div className="flex gap-4">
                 <a
                   href="https://facebook.com/albertsantiago.maestro.7"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src="./images/facebook.svg"
@@ -75,13 +76,19 @@ function App() {
                     alt=""
                   />
                 </a>
-                <img
-                  src="./images/linked.svg"
-                  className="w-10 hover:scale-110 transition ease-in cursor-pointer"
-                  alt=""
-                />
+                <a
+                  href="https://www.linkedin.com/in/albert-maestro-98b93729a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="./images/linked.svg"
+                    className="w-10 hover:scale-110 transition ease-in cursor-pointer"
+                    alt=""
+                  />
+                </a>
               </div>
-              <a href="./images/resume.pdf" target="_blank">
+              <a href="./images/Resume - Maestro Albert.pdf" target="_blank">
                 <button className="w-32 font-secondary py-2 hover:bg-accent hover:text-primary transition duration-300 ease-in mt-3 rounded-lg border-accent border text-accent">
                   View CV
                 </button>
@@ -286,12 +293,11 @@ function App() {
               My Projects
             </h3>
             <h1 className="text-gray-400 font-bold text-center text-4xl md:text-5xl">
-              Sample Things I've Built
+              Simple Things I've Built
             </h1>
             <p className="text-gray-400 text-sm p-0 md:px-56 text-center leading-6">
-              Currently I’m learning online courses about data analytics and so
-              far so good, I really enjoy solving problem and here’s my progress
-              right now.
+              Here's the list of some of my simple projects I built over the
+              past few months.
             </p>
             <div className="flex gap-2 mb-8">
               <div className="w-10 rounded-full p-1 bg-accent"></div>
@@ -309,9 +315,7 @@ function App() {
                   The Chocolate Sales Dashboard project is a comprehensive and
                   visually appealing solution designed to provide insightful
                   analytics and reporting for the chocolate sales data of the
-                  Company,using some of tools in Ms excel like Basic Formulas
-                  ,Pivot table and Charts to Create a clean and interactive
-                  dashboard.
+                  company.
                 </p>
                 <a
                   href="https://docs.google.com/spreadsheets/d/1I1yjSRor1kjgFuwx1AEaEK2zGxAd0Ppa782UpfXO8Gs/edit#gid=481430968"
@@ -327,14 +331,19 @@ function App() {
             <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
               <div className="p-8 flex flex-col gap-4">
                 <h3 className="font-secondary font-bold text-accent">
-                  Project 2
+                  Car Sales Dashboard
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Master SQL and MySQL for roles like SQL developer and Database
-                  administrator. Learn theoretical insights, best practices, and
-                  practical skills with MySQL Workbench.
+                  The Car Sales Dashboard project is a dynamic and feature-rich
+                  solution Analyzed in Microsoft Excel, designed to empower
+                  automotive businesses with unparalleled insights into their
+                  sales performance.
                 </p>
-                <a href="./images/sql.pdf" target="_blank">
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1g1DQTOpuwuVloqKz74gNuDgLmJTwJPhJWEhibDldBSQ/edit?pli=1#gid=602820111"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                     View Demo
                   </button>
@@ -344,15 +353,15 @@ function App() {
             <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
               <div className="p-8 flex flex-col gap-4">
                 <h3 className="font-secondary font-bold text-accent">
-                  Project 3
+                  Car Dekho
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Master Power BI tools, including Power BI Desktop, Query
-                  Editor, and Data Model. Learn data manipulation, relationship
-                  building, and visualization creation for a comprehensive
-                  understanding.
+                  This Project in Mysql is all about analyzing the Data of a Car
+                  Company, providing some answers to the questions of the
+                  manager, by Typing a query and by using some method like
+                  Extracting and Updating some data in the database.
                 </p>
-                <a href="./images/powerBi.pdf" target="_blank">
+                <a href="#" target="_blank">
                   <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                     View Demo
                   </button>
@@ -364,14 +373,17 @@ function App() {
             <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
               <div className="p-8 flex flex-col gap-4">
                 <h3 className="font-secondary font-bold text-accent">
-                  Project 1
+                  Walmart Database
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Master Excel with data management, key functions, PivotTables,
-                  PowerPivot, formula audits, and automation through Macros/VBA
-                  for increased efficiency.
+                  This Project provides some answers to the questions of the
+                  manager, by Typing a query and by using some method like
+                  Extracting and Updating some data in the database.This project
+                  empowers decision-makers within Walmart to optimize
+                  operations, enhance customer experiences, and drive overall
+                  business success.
                 </p>
-                <a href="./images/excel.pdf" target="_blank">
+                <a href="#" target="_blank">
                   <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                     View Demo
                   </button>
@@ -381,14 +393,14 @@ function App() {
             <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
               <div className="p-8 flex flex-col gap-4">
                 <h3 className="font-secondary font-bold text-accent">
-                  Project 2
+                  ECommerce Project
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Master SQL and MySQL for roles like SQL developer and Database
-                  administrator. Learn theoretical insights, best practices, and
-                  practical skills with MySQL Workbench.
+                  The Ecommerce Analytics Dashboard, developed using Power BI
+                  tools, is an advanced solution that transforms raw e-commerce
+                  data into interactive visualizations and actionable insights.
                 </p>
-                <a href="./images/sql.pdf" target="_blank">
+                <a href="#" target="_blank">
                   <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                     View Demo
                   </button>
@@ -398,13 +410,15 @@ function App() {
             <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
               <div className="p-8 flex flex-col gap-4">
                 <h3 className="font-secondary font-bold text-accent">
-                  Project 3
+                  HR Analytics Dashboard
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Master Power BI tools, including Power BI Desktop, Query
-                  Editor, and Data Model. Learn data manipulation, relationship
-                  building, and visualization creation for a comprehensive
-                  understanding.
+                  The HR Analytics Dashboard project, developed using Power BI,
+                  is an innovative solution designed to transform human
+                  resources data into actionable insights for strategic
+                  decision-making. This project empowers HR professionals and
+                  organizational leaders with a comprehensive view of key HR
+                  metrics and employee performance.
                 </p>
                 <a href="./images/powerBi.pdf" target="_blank">
                   <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
