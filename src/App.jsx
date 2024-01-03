@@ -27,7 +27,9 @@ function App() {
       <main className="bg-primary scroll-smooth overflow-hidden">
         <nav className="hidden md:block px-32 py-8 z-50">
           <ul className="flex text-gray-400 justify-between font-primary">
-            <img src="./images/logo.svg" className="w-8" alt="" />
+            <div>
+              <h1 className="text-accent font-secondary font-black">AM</h1>
+            </div>
             <div className="text-sm flex gap-8">
               <a href="#home">
                 <span className="text-accent font-secondary">01. </span> Home
@@ -49,17 +51,21 @@ function App() {
           </ul>
         </nav>
 
-        <section className="px-6 py-12 md:px-32 md:py-24" id="home">
+        <section className="px-6 pt-12 md:px-32 md:pt-24" id="home">
           <div className="flex-col flex md:flex-row">
             <div className="w-full md:w-1/2 flex justify-center items-end">
-              <img src="./images/a.png" className="w-4/5 md:w-9/12" alt="" />
+              <img
+                src="./images/profile_cover.png"
+                className="w-4/5 md:w-3/5"
+                alt=""
+              />
             </div>
             <div className="w-full md:w-1/2 text-gray-400 flex flex-col gap-2 md:gap-4">
               <h2 className="text-xl font-secondary text-accent">Hi I'm</h2>
-              <h1 className="text-6xl md:text-7xl font-black text-gray-400">
+              <h1 className="text-6xl md:text-8xl font-black text-gray-400">
                 ALBERT <span className="text-accent">MAESTRO</span>
               </h1>
-              <p className="text-gray-400 text-sm leading-6">
+              <p className="text-gray-400 text-sm leading-6 pr-12">
                 A Career shifter seeking an entry-level Data Analyst role to
                 apply my strong analytical and quantitative skills which
                 transform data into actionable insights.
@@ -72,7 +78,7 @@ function App() {
                 >
                   <img
                     src="./images/facebook.svg"
-                    className="w-10 hover:scale-110 transition ease-in cursor-pointer"
+                    className="w-12 hover:scale-110 transition ease-in cursor-pointer"
                     alt=""
                   />
                 </a>
@@ -83,7 +89,7 @@ function App() {
                 >
                   <img
                     src="./images/linked.svg"
-                    className="w-10 hover:scale-110 transition ease-in cursor-pointer"
+                    className="w-12 hover:scale-110 transition ease-in cursor-pointer"
                     alt=""
                   />
                 </a>
@@ -105,10 +111,10 @@ function App() {
             <h1 className="text-accent font-bold font-secondary">
               What I Currently Do?
             </h1>
-            <h1 className="text-gray-400 text-4xl text-center md:text-5xl font-bold">
+            <h1 className="text-gray-400 text-4xl text-center md:text-6xl font-bold">
               Taking Online Courses
             </h1>
-            <p className="text-gray-400 text-sm px-0 md:px-56 text-center leading-6">
+            <p className="text-gray-400 text-sm px-0 text-center leading-6">
               Currently I’m learning online courses about data analytics and so
               far so good, I really enjoy solving problem and here’s my progress
               right now.
@@ -201,7 +207,7 @@ function App() {
             </div>
             <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col gap-4">
               <h1 className="text-accent font-bold font-secondary">About Me</h1>
-              <h1 className="text-gray-400 font-bold text-4xl md:text-5xl">
+              <h1 className="text-gray-400 font-bold text-4xl md:text-6xl">
                 What is My Goal?
               </h1>
               <p className="text-gray-400 text-sm leading-6">
@@ -292,7 +298,7 @@ function App() {
             <h3 className="text-accent font-bold font-secondary">
               My Projects
             </h3>
-            <h1 className="text-gray-400 font-bold text-center text-4xl md:text-5xl">
+            <h1 className="text-gray-400 font-bold text-center text-4xl md:text-6xl">
               Simple Things I've Built
             </h1>
             <p className="text-gray-400 text-sm p-0 md:px-56 text-center leading-6">
@@ -436,7 +442,7 @@ function App() {
               <h3 className="text-accent font-bold font-secondary">
                 Contact Me
               </h3>
-              <h1 className="text-gray-400 font-bold text-4xl md:text-5xl">
+              <h1 className="text-gray-400 font-bold text-4xl md:text-6xl">
                 Get In Touch!
               </h1>
               <p className="text-gray-400 text-sm leading-6">
