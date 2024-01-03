@@ -61,7 +61,7 @@ function App() {
             <div className="flex-col flex md:flex-row">
               <div className="w-full md:w-1/2 flex justify-center items-end">
                 <img
-                  src="./images/profile_cover.png"
+                  src="./images/final_cover.png"
                   className="w-4/5 md:w-3/5"
                   alt=""
                 />
