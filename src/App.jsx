@@ -55,7 +55,7 @@ function App() {
 
         <div className="flex justify-center items-center">
           <section
-            className="w-full max-w-screen-2xl px-6 pt-12 md:px-32 md:pt-24"
+            className="w-full max-w-screen-2xl px-6 pt-12 pb-12 md:px-32 md:pt-24 md:pb-0"
             id="home"
           >
             <div className="flex-col flex md:flex-row">
@@ -71,7 +71,7 @@ function App() {
                 <h1 className="text-6xl md:text-8xl font-black text-gray-400">
                   ALBERT <span className="text-accent">MAESTRO</span>
                 </h1>
-                <p className="text-gray-400 text-sm leading-6 pr-12">
+                <p className="text-gray-400 text-sm leading-6 md:pr-12">
                   A Career shifter seeking an entry-level Data Analyst role to
                   apply my strong analytical and quantitative skills which
                   transform data into actionable insights.
@@ -220,7 +220,7 @@ function App() {
               <div className="w-full md:w-1/2">
                 <img src="./images/sample.png" className="object-fit" alt="" />
               </div>
-              <div className="w-full md:w-1/2 py-6 md:py-24 flex flex-col gap-4">
+              <div className="w-full md:w-1/2 py-12 pl-6 pr-6 md:py-24 md:pr-32 flex flex-col gap-4">
                 <h1 className="text-accent font-bold font-secondary">
                   About Me
                 </h1>
