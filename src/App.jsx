@@ -472,16 +472,16 @@ function App() {
               <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
-                    Coffee Sales
+                    Perfume Sales Dashboard
                   </h3>
                   <p className="text-gray-400 text-sm">
-                    The Coffee Sales Dashboard is designed for simplicity,
+                    The Perfume Sales Dashboard is designed for simplicity,
                     allowing you to effortlessly track performance, identify
                     growth opportunities, and make data-driven decisions to
-                    enhance a coffee business success.
+                    enhance a perfume business success.
                   </p>
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1kbCH4RMuZ3-rSfVSWbhG9ZG25vSxTUPI/edit#gid=216709074"
+                    href="https://docs.google.com/spreadsheets/d/14gKIKE-AxareMcDdSkPzuIXb_h9KS7o9/edit#gid=1950613346"
                     target="_blank"
                     rel="noreferrer"
                   >
