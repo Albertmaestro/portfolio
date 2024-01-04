@@ -49,7 +49,7 @@ function App() {
         </div>
 
         <div className="flex justify-center items-center">
-          <nav className="w-full max-w-screen-2xl hidden md:block px-32 py-8 z-50">
+          <nav className="w-full max-w-screen-2xl hidden md:block md:px-32 py-8 z-50">
             <ul className="flex text-gray-400 justify-between font-primary">
               <div>
                 <h1 className="text-accent font-secondary font-black">AM</h1>
@@ -70,7 +70,10 @@ function App() {
                   <span className="text-accent font-secondary">04. </span>{" "}
                   Projects
                 </a>
-                <li className="ml-7 p-3 bg-white rounded-full"></li>
+                <a href="#contact">
+                  <span className="text-accent font-secondary">05. </span>{" "}
+                  Contact
+                </a>
               </div>
             </ul>
           </nav>
@@ -78,58 +81,63 @@ function App() {
 
         <div className="flex justify-center items-center">
           <section
-            className="w-full max-w-screen-2xl px-6 pt-4 pb-12 md:px-32 md:pt-24 md:pb-0"
+            className="px-6 pt-4 pb-12 md:px-32 md:pt-24 md:pb-0"
             id="home"
           >
-            <div className="flex-col flex md:flex-row">
-              <div className="w-full md:w-1/2 flex justify-center items-end">
-                <img
-                  src="./images/final_cover.png"
-                  className="w-4/5 md:w-3/5"
-                  alt=""
-                />
-              </div>
-              <div className="w-full md:w-1/2 text-gray-400 flex flex-col gap-2 md:gap-4">
-                <h2 className="text-xl font-secondary text-accent pt-4 md:pt-0">
-                  Hi I'm
-                </h2>
-                <h1 className="text-6xl md:text-8xl font-black text-gray-400">
-                  ALBERT <span className="text-accent">MAESTRO</span>
-                </h1>
-                <p className="text-gray-400 text-sm leading-6 md:pr-12">
-                  A Career shifter seeking an entry-level Data Analyst role to
-                  apply my strong analytical and quantitative skills which
-                  transform data into actionable insights.
-                </p>
-                <div className="flex gap-4">
+            <div className="w-full max-w-screen-2xl">
+              <div className="flex-col flex md:flex-row">
+                <div className="w-full md:w-1/2 flex justify-center items-end">
+                  <img
+                    src="./images/final_cover.png"
+                    className="w-4/5 md:w-3/5"
+                    alt=""
+                  />
+                </div>
+                <div className="w-full md:w-1/2 text-gray-400 flex flex-col gap-2 md:gap-4">
+                  <h2 className="text-xl font-secondary text-accent pt-4 md:pt-0">
+                    Hi I'm
+                  </h2>
+                  <h1 className="text-6xl md:text-6xl lg:text-7xl 2xl:text-8xl font-black text-gray-400">
+                    ALBERT <span className="text-accent">MAESTRO</span>
+                  </h1>
+                  <p className="text-gray-400 text-sm leading-6 md:pr-12">
+                    A Career shifter seeking an entry-level Data Analyst role to
+                    apply my strong analytical and quantitative skills which
+                    transform data into actionable insights.
+                  </p>
+                  <div className="flex gap-4">
+                    <a
+                      href="https://facebook.com/albertsantiago.maestro.7"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="./images/facebook.svg"
+                        className="w-12 hover:scale-110 transition ease-in cursor-pointer"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/albert-maestro-98b93729a/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="./images/linked.svg"
+                        className="w-12 hover:scale-110 transition ease-in cursor-pointer"
+                        alt=""
+                      />
+                    </a>
+                  </div>
                   <a
-                    href="https://facebook.com/albertsantiago.maestro.7"
+                    href="./images/Resume - Maestro Albert.pdf"
                     target="_blank"
-                    rel="noreferrer"
                   >
-                    <img
-                      src="./images/facebook.svg"
-                      className="w-12 hover:scale-110 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/albert-maestro-98b93729a/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="./images/linked.svg"
-                      className="w-12 hover:scale-110 transition ease-in cursor-pointer"
-                      alt=""
-                    />
+                    <button className="w-32 font-secondary py-2 hover:bg-accent hover:text-primary transition duration-300 ease-in mt-3 rounded-lg border-accent border text-accent">
+                      View CV
+                    </button>
                   </a>
                 </div>
-                <a href="./images/Resume - Maestro Albert.pdf" target="_blank">
-                  <button className="w-32 font-secondary py-2 hover:bg-accent hover:text-primary transition duration-300 ease-in mt-3 rounded-lg border-accent border text-accent">
-                    View CV
-                  </button>
-                </a>
               </div>
             </div>
           </section>
@@ -547,7 +555,10 @@ function App() {
           </div>
         </section>
 
-        <section className="flex justify-center items-center px-6 py-12 md:px-32 md:py-24 bg-primary">
+        <section
+          className="flex justify-center items-center px-6 py-12 md:px-32 md:py-24 bg-primary"
+          id="contact"
+        >
           <div className="w-full max-w-screen-2xl">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-3/5 flex flex-col gap-4 pr-0 md:pr-12">
