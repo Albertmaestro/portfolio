@@ -614,7 +614,7 @@ function App() {
                     <input
                       type="text"
                       name="name"
-                      className="px-5 py-3 bg-white text-sm text-primary rounded-lg w-full"
+                      className="px-5 py-3 bg-gray-400 text-sm text-primary rounded-lg w-full"
                       required
                     />
 
@@ -624,7 +624,7 @@ function App() {
                     <input
                       type="email"
                       name="user_email"
-                      className="px-5 py-3 bg-white text-sm text-primary rounded-lg w-full"
+                      className="px-5 py-3 bg-gray-400 text-sm text-primary rounded-lg w-full"
                       required
                     />
 
@@ -634,7 +634,7 @@ function App() {
                     <textarea
                       type="text"
                       name="message"
-                      className="px-5 py-3 bg-white text-sm text-primary rounded-lg w-full"
+                      className="px-5 py-3 bg-gray-400 text-sm text-primary rounded-lg w-full"
                       required
                     />
 
