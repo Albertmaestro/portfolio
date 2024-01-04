@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        aboutme: "url('./images/about.jpg')",
+        aboutme: "url('./images/about_profile.jpg')",
       },
       colors: {
         primary: "#0c0e1c",

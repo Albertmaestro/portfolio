@@ -37,12 +37,14 @@ function App() {
   return (
     <>
       <main className="bg-primary scroll-smooth overflow-hidden">
-        <div className="block md:hidden flex justify-between p-6">
-          <h1 className="text-accent font-secondary font-black">AM</h1>
-          <div className="flex flex-col gap-1 items-end">
-            <div className="bg-accent h-1 w-6 rounded-full"></div>
-            <div className="bg-accent h-1 w-4 rounded-full"></div>
-            <div className="bg-accent h-1 w-6 rounded-full"></div>
+        <div className="block md:hidden">
+          <div className="flex justify-between p-6">
+            <h1 className="text-accent font-secondary font-black">AM</h1>
+            <div className="flex flex-col gap-1 items-end">
+              <div className="bg-accent h-1 w-6 rounded-full"></div>
+              <div className="bg-accent h-1 w-4 rounded-full"></div>
+              <div className="bg-accent h-1 w-6 rounded-full"></div>
+            </div>
           </div>
         </div>
 
