@@ -3,6 +3,14 @@ import "./index.css";
 import emailjs from "emailjs-com";
 
 function App() {
+  let profileData = [
+    {
+      id: 1,
+      title: "Skills",
+    },
+    { id: 2, title: "Education" },
+  ];
+  const [profile, setProfile] = useState(1);
   const [showContact, setShowContact] = useState(true);
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,6 +28,10 @@ function App() {
         console.log(err);
       });
     setShowContact(false);
+  };
+
+  const getProfileDescription = (data) => {
+    setProfile(data);
   };
 
   return (
@@ -237,71 +249,134 @@ function App() {
                   primary goal is to derive meaningful insights from data to
                   inform decision-making and solve business problems.
                 </p>
-                <ul className="flex gap-4 font-secondary text-gray-400 mt-6">
-                  <li className="text-accent">Skills</li>
-                  <li>Work Experience</li>
-                  <li>Education</li>
+                <ul className="flex gap-8 font-secondary hover:cursor-pointer text-gray-400 mt-6">
+                  {profileData.map((data, index) => (
+                    <li
+                      key={index}
+                      className={
+                        profile === data.id ? "font-bold text-accent" : ""
+                      }
+                      onClick={() => getProfileDescription(data.id)}
+                    >
+                      {data.title}
+                      <div
+                        className={
+                          profile === data.id
+                            ? "absolute h-1 w-10 bg-accent rounded-md mt-3"
+                            : "hidden"
+                        }
+                      ></div>
+                    </li>
+                  ))}
                 </ul>
                 <div className="bg-secondary p-8 rounded-lg mt-4">
-                  <div className="flex flex-wrap gap-6">
-                    <img
-                      src="./images/excel.svg"
-                      className="w-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                    <img
-                      src="./images/word.svg"
-                      className="w-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                    <img
-                      src="./images/powerpoint.svg"
-                      className="w-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                    <img
-                      src="./images/sql.svg"
-                      className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                    <img
-                      src="./images/powerbi.svg"
-                      className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                    <img
-                      src="./images/tableu.svg"
-                      className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                    <img
-                      src="./images/python.svg"
-                      className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                    <img
-                      src="./images/spreadsheet.svg"
-                      className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex gap-3 mt-8 text-tertiary flex-wrap">
-                    <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
-                      Leadership
-                    </div>
-                    <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
-                      Flexibility
-                    </div>
-                    <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
-                      Communication
-                    </div>
-                    <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
-                      Problem Solving
-                    </div>
-                    <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
-                      Adaptability
-                    </div>
-                  </div>
+                  {profile === 1 && (
+                    <>
+                      <div className="flex flex-wrap gap-6">
+                        <img
+                          src="./images/excel.svg"
+                          className="w-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                        <img
+                          src="./images/word.svg"
+                          className="w-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                        <img
+                          src="./images/powerpoint.svg"
+                          className="w-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                        <img
+                          src="./images/sql.svg"
+                          className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                        <img
+                          src="./images/powerbi.svg"
+                          className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                        <img
+                          src="./images/tableu.svg"
+                          className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                        <img
+                          src="./images/python.svg"
+                          className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                        <img
+                          src="./images/spreadsheet.svg"
+                          className="w-10 h-10 hover:scale-125 transition ease-in cursor-pointer"
+                          alt=""
+                        />
+                      </div>
+                      <div className="flex gap-3 mt-8 text-tertiary flex-wrap">
+                        <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
+                          Leadership
+                        </div>
+                        <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
+                          Flexibility
+                        </div>
+                        <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
+                          Communication
+                        </div>
+                        <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
+                          Problem Solving
+                        </div>
+                        <div className="rounded-full h-6 text-sm font-bold px-4 bg-accent">
+                          Adaptability
+                        </div>
+                      </div>
+                    </>
+                  )}
+
+                  {profile === 2 && (
+                    <ol className="border-l border-accent border-dashed pl-4">
+                      <li>
+                        <div className="flex flex-start items-center">
+                          <div className="bg-accent w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-6"></div>
+                          <h4 className="-mt-2 text-gray-400">
+                            BS Entreprenuership (Major in Farm Busines)
+                            <p>Mindoro State University</p>
+                          </h4>
+                        </div>
+                        <div className="ml-6 mb-6 mt-4">
+                          <p className="text-accent text-sm">2015 - 2019</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="flex flex-start items-center">
+                          <div className="bg-accent w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-6"></div>
+                          <h4 className="-mt-2 text-gray-400">
+                            Secondary
+                            <p>Fe Del Mundo National High School</p>
+                          </h4>
+                        </div>
+                        <div className="ml-6 mb-6 mt-4">
+                          <p className="text-accent text-sm">2011 - 2015</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="flex flex-start items-center">
+                          <div className="bg-accent w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-6"></div>
+                          <h4 className="-mt-2 text-gray-400">
+                            Primary
+                            <p>Don B. Del Mundo Elementary School</p>
+                          </h4>
+                        </div>
+                        <div className="ml-6 mb-6 mt-4">
+                          <p className="text-accent text-sm">2005 - 2011</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="bg-tertiary border-2 border-accent w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-2"></div>
+                      </li>
+                    </ol>
+                  )}
                 </div>
               </div>
             </div>
@@ -426,7 +501,7 @@ function App() {
                     e-commerce data into interactive visualizations and
                     actionable insights.
                   </p>
-                  <a href="#" target="_blank">
+                  <a href="./images/ecommerce.png" target="_blank">
                     <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                       View Demo
                     </button>
@@ -446,7 +521,7 @@ function App() {
                     organizational leaders with a comprehensive view of key HR
                     metrics and employee performance.
                   </p>
-                  <a href="./images/powerBi.pdf" target="_blank">
+                  <a href="./images/powerbi_1.png" target="_blank">
                     <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                       View Demo
                     </button>
