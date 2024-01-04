@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        aboutme: "url('./images/about.jpg')",
+      },
       colors: {
         primary: "#0c0e1c",
         secondary: "#13172f",

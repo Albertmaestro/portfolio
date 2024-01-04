@@ -37,6 +37,15 @@ function App() {
   return (
     <>
       <main className="bg-primary scroll-smooth overflow-hidden">
+        <div className="block md:hidden flex justify-between p-6">
+          <h1 className="text-accent font-secondary font-black">AM</h1>
+          <div className="flex flex-col gap-1 items-end">
+            <div className="bg-accent h-1 w-6 rounded-full"></div>
+            <div className="bg-accent h-1 w-4 rounded-full"></div>
+            <div className="bg-accent h-1 w-6 rounded-full"></div>
+          </div>
+        </div>
+
         <div className="flex justify-center items-center">
           <nav className="w-full max-w-screen-2xl hidden md:block px-32 py-8 z-50">
             <ul className="flex text-gray-400 justify-between font-primary">
@@ -67,7 +76,7 @@ function App() {
 
         <div className="flex justify-center items-center">
           <section
-            className="w-full max-w-screen-2xl px-6 pt-12 pb-12 md:px-32 md:pt-24 md:pb-0"
+            className="w-full max-w-screen-2xl px-6 pt-4 pb-12 md:px-32 md:pt-24 md:pb-0"
             id="home"
           >
             <div className="flex-col flex md:flex-row">
@@ -79,7 +88,9 @@ function App() {
                 />
               </div>
               <div className="w-full md:w-1/2 text-gray-400 flex flex-col gap-2 md:gap-4">
-                <h2 className="text-xl font-secondary text-accent">Hi I'm</h2>
+                <h2 className="text-xl font-secondary text-accent pt-4 md:pt-0">
+                  Hi I'm
+                </h2>
                 <h1 className="text-6xl md:text-8xl font-black text-gray-400">
                   ALBERT <span className="text-accent">MAESTRO</span>
                 </h1>
@@ -229,10 +240,8 @@ function App() {
         >
           <div className="w-full max-w-screen-2xl">
             <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-1/2">
-                <img src="./images/sample.png" className="object-fit" alt="" />
-              </div>
-              <div className="w-full md:w-1/2 py-12 pl-6 pr-6 md:py-24 md:pr-32 flex flex-col gap-4">
+              <div className="w-full h-60 md:h-auto md:w-1/2 bg-aboutme bg-cover bg-center grayscale"></div>
+              <div className="w-full md:w-1/2 py-12 pl-6 pr-6 md:py-24 md:pr-32 md:pl-12 flex flex-col gap-4">
                 <h1 className="text-accent font-bold font-secondary">
                   About Me
                 </h1>
@@ -453,13 +462,13 @@ function App() {
               <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
-                    Car Dekho
+                    Coffee Sales
                   </h3>
                   <p className="text-gray-400 text-sm">
-                    This Project in Mysql is all about analyzing the Data of a
-                    Car Company, providing some answers to the questions of the
-                    manager, by Typing a query and by using some method like
-                    Extracting and Updating some data in the database.
+                    The Coffee Sales Dashboard is designed for simplicity,
+                    allowing you to effortlessly track performance, identify
+                    growth opportunities, and make data-driven decisions to
+                    enhance a coffee business success.
                   </p>
                   <a href="#" target="_blank">
                     <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
@@ -483,7 +492,7 @@ function App() {
                     operations, enhance customer experiences, and drive overall
                     business success.
                   </p>
-                  <a href="#" target="_blank">
+                  <a href="./images/walmart_query.sql" target="_blank">
                     <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                       View Demo
                     </button>
