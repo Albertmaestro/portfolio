@@ -472,7 +472,11 @@ function App() {
                     growth opportunities, and make data-driven decisions to
                     enhance a coffee business success.
                   </p>
-                  <a href="#" target="_blank">
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1kbCH4RMuZ3-rSfVSWbhG9ZG25vSxTUPI/edit#gid=216709074"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                       View Demo
                     </button>
