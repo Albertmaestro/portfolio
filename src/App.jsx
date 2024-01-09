@@ -10,8 +10,14 @@ function App() {
     },
     { id: 2, title: "Education" },
   ];
+  const [showPanel, setShowPanel] = useState(false);
   const [profile, setProfile] = useState(1);
   const [showContact, setShowContact] = useState(true);
+
+  const viewPanel = () => {
+    setShowPanel(!showPanel);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -38,9 +44,12 @@ function App() {
     <>
       <main className="bg-primary scroll-smooth overflow-hidden">
         <div className="block md:hidden">
-          <div className="flex justify-between p-6">
+          <div className="fixed bg-primary w-full top-0 flex justify-between p-6 z-20">
             <h1 className="text-accent font-secondary font-black">AM</h1>
-            <div className="flex flex-col gap-1 items-end">
+            <div
+              className="flex flex-col gap-1 items-end"
+              onClick={() => viewPanel()}
+            >
               <div className="bg-accent h-1 w-6 rounded-full"></div>
               <div className="bg-accent h-1 w-4 rounded-full"></div>
               <div className="bg-accent h-1 w-6 rounded-full"></div>
@@ -48,8 +57,51 @@ function App() {
           </div>
         </div>
 
+        {showPanel && (
+          <div className="block md:hidden transition ease-in duration-75">
+            <div className="fixed w-screen h-screen backdrop-blur-sm z-20"></div>
+            <section className="fixed px-8 bg-primary w-full h-72 left-0 right-0 top-0 z-30">
+              <ul className="text-gray-400 font-primary">
+                <div className="flex justify-end mt-4">
+                  <h1
+                    className="text-accent text-xl font-secondary font-black"
+                    onClick={() => viewPanel()}
+                  >
+                    &#x2715;
+                  </h1>
+                </div>
+                <div
+                  className="text-sm flex flex-col gap-6"
+                  onClick={() => viewPanel()}
+                >
+                  <a href="#home">
+                    <span className="text-accent font-secondary">01. </span>{" "}
+                    Home
+                  </a>
+                  <a href="#whatIDo">
+                    <span className="text-accent font-secondary">02. </span>{" "}
+                    What I Do?
+                  </a>
+                  <a href="#about">
+                    <span className="text-accent font-secondary">03. </span>{" "}
+                    About Me
+                  </a>
+                  <a href="#projects">
+                    <span className="text-accent font-secondary">04. </span>{" "}
+                    Projects
+                  </a>
+                  <a href="#contact">
+                    <span className="text-accent font-secondary">05. </span>{" "}
+                    Contact
+                  </a>
+                </div>
+              </ul>
+            </section>
+          </div>
+        )}
+
         <div className="flex justify-center items-center">
-          <nav className="w-full max-w-screen-2xl hidden md:block md:px-32 py-8 z-50">
+          <nav className="w-full max-w-screen-2xl hidden md:block md:px-32 py-8 z-20">
             <ul className="flex text-gray-400 justify-between font-primary">
               <div>
                 <h1 className="text-accent font-secondary font-black">AM</h1>
@@ -81,7 +133,7 @@ function App() {
 
         <div className="flex justify-center items-center">
           <section
-            className="px-6 pt-4 pb-12 md:px-32 md:pt-24 md:pb-0"
+            className="px-6 pt-20 pb-12 md:px-32 md:pt-24 md:pb-0"
             id="home"
           >
             <div className="w-full max-w-screen-2xl">
@@ -167,10 +219,10 @@ function App() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <img
                   src="./images/image1.png"
-                  className="transition duration-500 rounded-t-lg grayscale opacity-50 hover:opacity-100 hover:grayscale-0"
+                  className="rounded-t-lg grayscale opacity-80"
                   alt=""
                 />
                 <div className="p-8 flex flex-col gap-4">
@@ -192,10 +244,10 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <img
                   src="./images/sql.png"
-                  className="transition duration-500 rounded-t-lg grayscale opacity-60 hover:opacity-100 hover:grayscale-0"
+                  className="rounded-t-lg grayscale opacity-80"
                   alt=""
                 />
                 <div className="p-8 flex flex-col gap-4">
@@ -215,10 +267,10 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <img
                   src="./images/powerbi.png"
-                  className="transition duration-500 rounded-t-lg grayscale opacity-60 hover:opacity-100 hover:grayscale-0"
+                  className="rounded-t-lg grayscale opacity-80"
                   alt=""
                 />
                 <div className="p-8 flex flex-col gap-4">
@@ -281,7 +333,7 @@ function App() {
                       <div
                         className={
                           profile === data.id
-                            ? "absolute h-1 w-10 bg-accent rounded-md mt-3"
+                            ? "absolute h-1 w-10 bg-accent rounded-full mt-3 z-10"
                             : "hidden"
                         }
                       ></div>
@@ -425,7 +477,7 @@ function App() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-6">
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
                     Chocolate Sales Dashboard
@@ -447,7 +499,7 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
                     Car Sales Dashboard
@@ -469,7 +521,7 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
                     Perfume Sales Dashboard
@@ -493,7 +545,7 @@ function App() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-6 mt-6">
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
                     Walmart Database
@@ -513,7 +565,7 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
                     ECommerce Project
@@ -531,7 +583,7 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400">
+              <div className="w-full md:w-1/3 bg-tertiary rounded-lg text-gray-400 hover:scale-105 transition">
                 <div className="p-8 flex flex-col gap-4">
                   <h3 className="font-secondary font-bold text-accent">
                     HR Analytics Dashboard
@@ -657,21 +709,35 @@ function App() {
 
         <footer className="px-6 py-12 md:px-32 md:py-12 bg-secondary flex justify-center items-center flex-col gap-2">
           <div className="flex justify-center gap-4">
-            <img
-              src="./images/facebook.svg"
-              className="w-8 hover:scale-125 transition ease-in cursor-pointer"
-              alt=""
-            />
-            <img
-              src="./images/linked.svg"
-              className="w-8 hover:scale-125 transition ease-in cursor-pointer"
-              alt=""
-            />
-            <img
-              src="./images/heart.svg"
-              className="w-8 hover:scale-125 transition ease-in cursor-pointer"
-              alt=""
-            />
+            <a
+              href="https://facebook.com/albertsantiago.maestro.7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="./images/facebook.svg"
+                className="w-8 hover:scale-125 transition ease-in cursor-pointer"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/albert-maestro-98b93729a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="./images/linked.svg"
+                className="w-8 hover:scale-125 transition ease-in cursor-pointer"
+                alt=""
+              />
+            </a>
+            <a href="#home">
+              <img
+                src="./images/heart.svg"
+                className="w-8 hover:scale-125 transition ease-in cursor-pointer"
+                alt=""
+              />
+            </a>
           </div>
           <h3 className="text-gray-400 font-bold">Albert Maestro 2023</h3>
           <p className="text-sm text-gray-400">
