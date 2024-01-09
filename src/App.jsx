@@ -130,7 +130,7 @@ function App() {
                     </a>
                   </div>
                   <a
-                    href="./images/Resume - Maestro Albert.pdf"
+                    href="./images/Resume - Maestro Albert S.pdf"
                     target="_blank"
                   >
                     <button className="w-32 font-secondary py-2 hover:bg-accent hover:text-primary transition duration-300 ease-in mt-3 rounded-lg border-accent border text-accent">
@@ -459,7 +459,7 @@ function App() {
                     into their sales performance.
                   </p>
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1g1DQTOpuwuVloqKz74gNuDgLmJTwJPhJWEhibDldBSQ/edit?pli=1#gid=602820111"
+                    href="https://docs.google.com/spreadsheets/d/1kbCH4RMuZ3-rSfVSWbhG9ZG25vSxTUPI/edit#gid=270240320"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -506,7 +506,7 @@ function App() {
                     operations, enhance customer experiences, and drive overall
                     business success.
                   </p>
-                  <a href="./images/walmart_query.sql" target="_blank">
+                  <a href="./images/walmart.sql" target="_blank">
                     <button className="transition duration-300 ease-in w-32 py-3 border text-gray-300 border-gray-600 rounded-lg hover:bg-accent text-xs hover:text-primary">
                       View Demo
                     </button>
